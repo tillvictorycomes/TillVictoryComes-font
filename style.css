@@ -1,11 +1,8 @@
 @font-face {
   font-family: 'TillVictoryComes';
-  src: url('tvc-250714-Regular.woff2') format('woff2');
+  src: url('tvc-250723-Regular.woff2') format('woff2'),
+       url('tvc-250723-Regular.woff') format('woff'),
+       url('tvc-250723-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-}
-body {
-  font-family: 'TillVictoryComes', sans-serif;
-  font-size: 40px;
-  padding: 20px;
 }
