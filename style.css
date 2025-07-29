@@ -1,12 +1,8 @@
-  @font-face {
-    font-family: 'TillVictoryComes';
-    src: url('https://cdn.jsdelivr.net/gh/tillvictorycomes/TillVictoryComes-font@main/tvc-250723-Regular.woff?v=2') format('woff'),
-         url('https://cdn.jsdelivr.net/gh/tillvictorycomes/TillVictoryComes-font@main/tvc-250723-Regular.woff2?v=2') format('woff2'),
-         url('https://cdn.jsdelivr.net/gh/tillvictorycomes/TillVictoryComes-font@main/tvc-250723-Regular.ttf?v=2') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-
-  * {
-    font-family: 'TillVictoryComes' !important;
-  }
+@font-face {
+  font-family: 'TillVictoryComes';
+  src: url('tvc-250723-Regular.woff2') format('woff2'),
+       url('tvc-250723-Regular.woff') format('woff'),
+       url('tvc-250723-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
