@@ -1,11 +1,63 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8" />
-<title>승리의 그날까지 폰트 테스트</title>
-<link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>승리의 그날까지 폰트 테스트</title>
+
+  <!-- 웹폰트 CSS 연결 -->
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    body {
+      font-family: 'TillVictoryComes', sans-serif;
+      background-color: #faf4e4;
+      color: #2f2725;
+      padding: 40px;
+      line-height: 1.6;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .test-sample {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .divider {
+      border-bottom: 2px solid #2f2725;
+      margin: 2rem 0;
+    }
+
+    .footer {
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 4rem;
+    }
+  </style>
 </head>
+
 <body>
-<p>승리의 그날까지 폰트가 정상 작동하면 이 글씨가 폰트 스타일로 표시됩니다.</p>
+  <h1>승리의 그날까지 폰트 데모</h1>
+
+  <div class="test-sample">이 문장이 TillVictoryComes 폰트로 보이면 웹폰트 적용이 잘 된 것입니다.</div>
+  <div class="test-sample">가나다라마바사아자차카타파하</div>
+  <div class="test-sample">ABC abc 123 !@# %&* (테스트)</div>
+
+  <div class="divider"></div>
+
+  <div class="test-sample" style="font-size: 2rem;">크게: 끝까지 간다, 승리의 그날까지!</div>
+  <div class="test-sample" style="font-size: 1rem;">작게: 한 글자 한 글자, 각목처럼 묵직하게.</div>
+
+  <div class="footer">
+    현재 적용된 폰트: TillVictoryComes  
+    <br />
+    제작: moldu / 배포: 1degrit  
+    <br />
+    <a href="https://github.com/tillvictorycomes/TillVictoryComes-font" target="_blank">GitHub에서 보기</a>
+  </div>
 </body>
 </html>
