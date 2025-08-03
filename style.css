@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'TillVictoryComes';
-  src: url('tvc-250723-Regular.ttf') format('truetype'), /* Try TTF first for older devices */
-       url('tvc-250723-Regular.woff2') format('woff2'),
-       url('tvc-250723-Regular.woff') format('woff');
+  src: url('https://tillvictorycomes.github.io/TillVictoryComes-font/tvc-250723-Regular.ttf') format('truetype'), /* Try TTF first for older devices */
+       url('https://tillvictorycomes.github.io/TillVictoryComes-font/tvc-250723-Regular.woff2') format('woff2'),
+       url('https://tillvictorycomes.github.io/TillVictoryComes-font/tvc-250723-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-  font-display: block; /* Change from swap to block */
+  font-display: block;
 }
