@@ -2,5 +2,6 @@
   font-family: 'TillVictoryComes';
   src: url('/tvc-250723-Regular.woff2') format('woff2'),
        url('/tvc-250723-Regular.woff') format('woff');
-  font-display: block;
+  font-display: swap;
 }
+
