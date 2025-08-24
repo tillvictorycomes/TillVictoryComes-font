@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg id="_레이어_2" data-name="레이어 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1080 1350">
   <defs>
-    <style>
-      .cls-1 {
-        fill: #1c1c1c;
-      }
-
-      .cls-2 {
-        fill: none;
-      }
-
-      .cls-3 {
-        clip-path: url(#clippath);
-      }
-    </style>
+      <style>
+      - .cls-1 { fill:#1c1c1c; }
+      + .cls-1 { fill: currentColor; }  /* ← 글자색을 따라감 */
+      
+        .cls-2 { fill:none; }
+        .cls-3 { clip-path: url(#clippath); }
+      </style>
     <clipPath id="clippath">
       <rect class="cls-2" width="1080" height="1350"/>
     </clipPath>
