@@ -1,12 +1,10 @@
-// tvc_archive_4.js – Moveable.js 기반 개선 버전
-// 티스토리 업로드 이미지 자동 감지 + 드래그/회전 + 충돌 최소화 배치 포함
-// 원본: tvc_archive.js + moveable.js
-
+// tvc_archive_4.js – Moveable.js 기반 개선 버전 with topZ 방식
 (function(){
   const HEIGHT_FACTOR = 2.8;
   const MIN_BASE_HEIGHT = 3000;
   const EXTRA_PER_ITEM = 140;
   const INIT_ROTATE_RANGE = 35;
+  let topZ = 1000; // z-index 순번 관리용 전역 변수
 
   const rand = (min, max) => Math.random() * (max - min) + min;
   const randDeg = () => rand(-INIT_ROTATE_RANGE, INIT_ROTATE_RANGE);
@@ -26,6 +24,7 @@
       fig.style.left = `${80 + (i % 5) * 140}px`;
       fig.style.top  = `${100 + Math.floor(i / 5) * 180}px`;
       fig.style.transform = `rotate(${randDeg().toFixed(1)}deg)`;
+      fig.style.zIndex = (++topZ).toString();
       fig.appendChild(img);
       section.appendChild(fig);
       figures.push(fig);
@@ -51,6 +50,7 @@
       el.style.left = `${x}px`;
       el.style.top  = `${y}px`;
       el.style.transform = `rotate(${randDeg().toFixed(1)}deg)`;
+      el.style.zIndex = (++topZ).toString();
     });
   }
 
@@ -68,7 +68,6 @@
     });
   }
 
-  // moveable.js로 드래그+회전 기능 추가
   function enableMoveableDrag(items){
     if (!window.Moveable || !items.length) return;
     const moveable = new Moveable(document.querySelector(".tutto-section"), {
@@ -80,6 +79,9 @@
     });
 
     moveable
+      .on("dragStart", ({ target }) => {
+        target.style.zIndex = (++topZ).toString();
+      })
       .on("drag", ({ target, left, top }) => {
         target.style.left = `${left}px`;
         target.style.top  = `${top}px`;
@@ -99,7 +101,6 @@
     waitImagesLoaded('.tutto-canvas-wrap img', runTVC);
   });
 
-  // 화면 리사이즈 시 재배치
   let resizeTimer = null;
   window.addEventListener('resize', () => {
     clearTimeout(resizeTimer);
