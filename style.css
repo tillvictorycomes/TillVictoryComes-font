@@ -1,10 +1,15 @@
 /* /style.css (on Vercel) */
 @font-face{
   font-family:'TillVictoryComes';
-  src:url('/tvc-regular.woff2') format('woff2'),
-      url('/tvc-regular.woff')  format('woff');
+src:
+  url('https://cdn.jsdelivr.net/gh/tillvictorycomes/TillVictoryComes-font/tvc-20251001.woff2') format('woff2'),
+  url('https://tvc-webfont.vercel.app/tvc-20251001.woff2') format('woff2'),
+  url('https://cdn.jsdelivr.net/gh/tillvictorycomes/TillVictoryComes-font/tvc-20251001.woff')  format('woff'),
+  url('https://tvc-webfont.vercel.app/tvc-20251001.woff')  format('woff');
+
   font-weight:400;
   font-style:normal;
   font-display:block; /* 필요시 block으로 바꿔도 됨 */
 }
+
 
