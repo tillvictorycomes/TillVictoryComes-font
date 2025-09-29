@@ -1,6 +1,20 @@
+/* === 승리의그날까지 기본체 (Regular 400) === */
 @font-face {
   font-family: 'TillVictoryComes';
-  src: url('/tillvictorycomes-Regular.woff2') format('woff2'),
-       url('/tillvictorycomes-Regular.woff') format('woff');
-  font-display: swap;
+  src:
+    local('TillVictoryComes Regular'),
+    local('TillVictoryComes-Regular'),
+    url('https://cdn.jsdelivr.net/gh/tillvictorycomes/TillVictoryComes-font@main/fonts/tillvictorycomes-Regular.woff2?v=20250929') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/tillvictorycomes/TillVictoryComes-font@main/fonts/tillvictorycomes-Regular.woff?v=20250929') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; /* 텍스트 깜빡임 방지 */
+  unicode-range: U+0000-00FF, U+1100-11FF, U+3130-318F, U+AC00-D7A3; /* 영문+한글 */
+}
+
+
+/* (선택) 렌더링 품질 개선 */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
