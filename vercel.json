@@ -1,14 +1,7 @@
 {
   "headers": [
     {
-      "source": "/tillvictorycomes-Regular.woff2",
-      "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" },
-        { "key": "Access-Control-Allow-Origin", "value": "*" }
-      ]
-    },
-    {
-      "source": "/tillvictorycomes-Regular.woff",
+      "source": "/fonts/tillvictorycomes-Regular.woff2",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" },
         { "key": "Access-Control-Allow-Origin", "value": "*" }
