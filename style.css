@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'TillVictoryComes';
-  src: url('https://tvc-webfont.vercel.app/fonts/tillvictorycomes-Regular.woff2') format('woff2');
+  src: url('https://tvc-webfont.vercel.app/fonts/tillvictorycomes-Regular.woff2') format('woff2'),
+       url('https://tvc-webfont.vercel.app/fonts/tillvictorycomes-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
