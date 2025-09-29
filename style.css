@@ -1,8 +1,9 @@
-@font-face {
-  font-family: 'TillVictoryComes';
-  src: url('https://tvc-webfont.vercel.app/tvc-regular.woff2') format('woff2'),
-       url('https://tvc-webfont.vercel.app/tvc-regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
+/* /style.css (on Vercel) */
+@font-face{
+  font-family:'TillVictoryComes';
+  src:url('/tvc-regular.woff2') format('woff2'),
+      url('/tvc-regular.woff')  format('woff');
+  font-weight:400;
+  font-style:normal;
+  font-display:swap; /* 필요시 block으로 바꿔도 됨 */
 }
