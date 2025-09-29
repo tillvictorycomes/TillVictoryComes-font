@@ -1,6 +1,11 @@
 @font-face {
   font-family: 'TillVictoryComes';
-  src: url('/tillvictorycomes-Regular.woff2') format('woff2'),
-       url('/tillvictorycomes-Regular.woff') format('woff');
+  src: url('tillvictorycomes-Regular.woff2') format('woff2'),
+       url('tillvictorycomes-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
   font-display: swap;
+}
+body {
+  font-family: 'TillVictoryComes', sans-serif;
 }
