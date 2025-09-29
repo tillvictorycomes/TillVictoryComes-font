@@ -1,7 +1,8 @@
 @font-face {
   font-family: 'TillVictoryComes';
-  src: url('https://cdn.jsdelivr.net/gh/tillvictorycomes/tillvictorycomes-font/fonts/tillvictorycomes-Regular.woff2?v=2') format('woff2'),
-       url('https://cdn.jsdelivr.net/gh/tillvictorycomes/tillvictorycomes-font/fonts/tillvictorycomes-Regular.woff?v=2') format('woff');
-  font-display: swap;
-  font-weight: 400;
+  src: url('https://tvc-webfont.vercel.app/tvc-regular.woff2') format('woff2'),
+       url('https://tvc-webfont.vercel.app/tvc-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
 }
