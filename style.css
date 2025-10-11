@@ -1,57 +1,62 @@
+/* 통합 기본 (WOFF2, 전체) */
 @font-face {
-    font-family: 'TillVictoryComes';
-    /* WOFF2는 일반적으로 전체 폰트를 담고 있으며, 최신 브라우저에서 우선적으로 로드됩니다. */
-    src: url('https://cdn.jsdelivr.net/gh/tillvictorycomes/TillVictoryComes-font/tillvictorycomes-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-    /* 만약 WOFF2도 분할했다면, unicode-range를 여기에 추가해야 합니다. 
-       일반적으로 WOFF2는 전체 폰트가 하나로 제공되는 경우가 많습니다. */
+  font-family: 'TillVictoryComes';
+  src: url('https://cdn.jsdelivr.net/gh/tillvictorycomes/TillVictoryComes-font/tillvictorycomes-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-/* 한글 (hgye-a): 가-힣의 일부 범위 */
+/* Latin */
 @font-face {
-    font-family: 'TillVictoryComes'; /* 동일한 font-family 이름 사용 */
-    src: url('https://cdn.jsdelivr.net/gh/tillvictorycomes/TillVictoryComes-font/tillvictorycomes-Regular-hgye-a.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-    /* 이 폰트 파일이 담당하는 실제 유니코드 범위를 정확히 지정해야 합니다. */
-    /* 예시: 완성형 한글 일부 (가-힣 범위 내) */
-    unicode-range: U+AC00-U+B0FF; /* 이 값은 실제 폰트 파일의 포함 범위에 따라 조정되어야 합니다. */
+  font-family: 'TillVictoryComes';
+  src: url('https://cdn.jsdelivr.net/gh/tillvictorycomes/TillVictoryComes-font/tillvictorycomes-Regular-latin.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0020-007E, U+00A0-00FF, U+2000-206F, U+20A0-20CF;
 }
 
-/* 한글 (hgye-b): 가-힣의 또 다른 일부 범위 */
+/* HCore: 자모/호환자모 */
 @font-face {
-    font-family: 'TillVictoryComes';
-    src: url('https://cdn.jsdelivr.net/gh/tillvictorycomes/TillVictoryComes-font/tillvictorycomes-Regular-hgye-b.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-    /* 예시: 완성형 한글 또 다른 일부 */
-    unicode-range: U+B100-U+B5FF; /* 이 값은 실제 폰트 파일의 포함 범위에 따라 조정되어야 합니다. */
+  font-family: 'TillVictoryComes';
+  src: url('https://cdn.jsdelivr.net/gh/tillvictorycomes/TillVictoryComes-font/tillvictorycomes-Regular-hcore.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+1100-11FF, U+3130-318F;
 }
 
-/* 한글 (hgye-c): 가-힣의 마지막 일부 범위 */
+/* Hsyll-A: 완성형 초반 */
 @font-face {
-    font-family: 'TillVictoryComes';
-    src: url('https://cdn.jsdelivr.net/gh/tillvictorycomes/TillVictoryComes-font/tillvictorycomes-Regular-hgye-c.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-    /* 예시: 완성형 한글 마지막 일부 */
-    unicode-range: U+B600-U+D7A3; /* 이 값은 실제 폰트 파일의 포함 범위에 따라 조정되어야 합니다. */
+  font-family: 'TillVictoryComes';
+  src: url('https://cdn.jsdelivr.net/gh/tillvictorycomes/TillVictoryComes-font/tillvictorycomes-Regular-hsyll-a.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+AC00-U+C0FF;
 }
 
-/* 라틴 문자 (latn): 영어 알파벳, 숫자, 기본 기호 */
+/* Hsyll-B: 완성형 중간 */
 @font-face {
-    font-family: 'TillVictoryComes';
-    src: url('https://cdn.jsdelivr.net/gh/tillvictorycomes/TillVictoryComes-font/tillvictorycomes-Regular-latn.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-    /* ASCII 문자 (기본 라틴 알파벳, 숫자, 구두점 등) */
-    unicode-range: U+0020-U+007E, U+00A0-U+00FF, U+2000-U+206F, U+20A0-U+20CF; /* 주요 라틴어 및 특수 문자 범위 */
+  font-family: 'TillVictoryComes';
+  src: url('https://cdn.jsdelivr.net/gh/tillvictorycomes/TillVictoryComes-font/tillvictorycomes-Regular-hsyll-b.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+C100-U+D0FF;
 }
 
+/* Hsyll-C: 완성형 후반 */
+@font-face {
+  font-family: 'TillVictoryComes';
+  src: url('https://cdn.jsdelivr.net/gh/tillvictorycomes/TillVictoryComes-font/tillvictorycomes-Regular-hsyll-c.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+D100-U+D7A3;
+}
 
+body {
+  font-family: 'TillVictoryComes', sans-serif;
+}
