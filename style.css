@@ -1,45 +1,75 @@
-/* TilVictoryComes-Regular.woff2 선언 */
 @font-face {
-  font-family: 'TilVictoryComes'; /* 폰트의 이름 */
-  src: url('fonts/TilVictoryComes-Regular.woff2') format('woff2'); /* WOFF2 파일 경로 */
-  font-weight: normal; /* 폰트 두께 (normal, bold, 100-900 등) */
-  font-style: normal; /* 폰트 스타일 (normal, italic 등) */
-  font-display: swap; /* 폰트 로딩 전략 (optional, block, swap, fallback) */
+    font-family: 'TillVictoryComes';
+    /* WOFF2는 일반적으로 전체 폰트를 담고 있으며, 최신 브라우저에서 우선적으로 로드됩니다. */
+    src: url('https://cdn.jsdelivr.net/gh/tillvictorycomes/TillVictoryComes-font/tillvictorycomes-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    /* 만약 WOFF2도 분할했다면, unicode-range를 여기에 추가해야 합니다. 
+       일반적으로 WOFF2는 전체 폰트가 하나로 제공되는 경우가 많습니다. */
 }
 
-/* TilVictoryComes-Regular-hgye-a.woff 선언 (분할된 WOFF 폰트 예시) */
+/* 한글 (hgye-a): 가-힣의 일부 범위 */
 @font-face {
-  font-family: 'TilVictoryComes'; /* 같은 폰트 이름을 사용하여 여러 파일 지정 가능 */
-  src: url('fonts/TilVictoryComes-Regular-hgye-a.woff') format('woff'); /* WOFF 파일 경로 */
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-  /* unicode-range: U+AC00-U+D7A3; /* 한글 (가-힣) 유니코드 범위. 특정 범위만 로드할 때 사용 */
+    font-family: 'TillVictoryComes'; /* 동일한 font-family 이름 사용 */
+    src: url('https://cdn.jsdelivr.net/gh/tillvictorycomes/TillVictoryComes-font/tillvictorycomes-Regular-hgye-a.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    /* 이 폰트 파일이 담당하는 실제 유니코드 범위를 정확히 지정해야 합니다. */
+    /* 예시: 완성형 한글 일부 (가-힣 범위 내) */
+    unicode-range: U+AC00-U+B0FF; /* 이 값은 실제 폰트 파일의 포함 범위에 따라 조정되어야 합니다. */
 }
 
-/* TilVictoryComes-Regular-hgye-b.woff 선언 (분할된 WOFF 폰트 예시) */
+/* 한글 (hgye-b): 가-힣의 또 다른 일부 범위 */
 @font-face {
-  font-family: 'TilVictoryComes';
-  src: url('fonts/TilVictoryComes-Regular-hgye-b.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-  /* unicode-range: U+3131-U+318E; /* 자음, 모음 등. 실제 범위는 폰트 특성에 따라 다름 */
+    font-family: 'TillVictoryComes';
+    src: url('https://cdn.jsdelivr.net/gh/tillvictorycomes/TillVictoryComes-font/tillvictorycomes-Regular-hgye-b.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    /* 예시: 완성형 한글 또 다른 일부 */
+    unicode-range: U+B100-U+B5FF; /* 이 값은 실제 폰트 파일의 포함 범위에 따라 조정되어야 합니다. */
 }
 
-/* ... 필요한 다른 분할된 WOFF 폰트들도 위와 같이 추가 */
-
-/* TilVictoryComes-Regular-latn.woff 선언 (라틴 문자 WOFF 폰트 예시) */
+/* 한글 (hgye-c): 가-힣의 마지막 일부 범위 */
 @font-face {
-  font-family: 'TilVictoryComes';
-  src: url('fonts/TilVictoryComes-Regular-latn.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-  /* unicode-range: U+0020-U+007E; /* ASCII 문자 범위 */
+    font-family: 'TillVictoryComes';
+    src: url('https://cdn.jsdelivr.net/gh/tillvictorycomes/TillVictoryComes-font/tillvictorycomes-Regular-hgye-c.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    /* 예시: 완성형 한글 마지막 일부 */
+    unicode-range: U+B600-U+D7A3; /* 이 값은 실제 폰트 파일의 포함 범위에 따라 조정되어야 합니다. */
 }
 
-/* 폰트 사용 예시 */
+/* 라틴 문자 (latn): 영어 알파벳, 숫자, 기본 기호 */
+@font-face {
+    font-family: 'TillVictoryComes';
+    src: url('https://cdn.jsdelivr.net/gh/tillvictorycomes/TillVictoryComes-font/tillvictorycomes-Regular-latn.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    /* ASCII 문자 (기본 라틴 알파벳, 숫자, 구두점 등) */
+    unicode-range: U+0020-U+007E, U+00A0-U+00FF, U+2000-U+206F, U+20A0-U+20CF; /* 주요 라틴어 및 특수 문자 범위 */
+}
+
+/* 대체 WOFF (혹시 모를 상황 대비 또는 WOFF2 미지원 브라우저용) */
+/* 이 폰트 파일이 전체 폰트이거나, 위 분할된 폰트들로 커버되지 않는 다른 범위를 담당한다면 사용합니다. */
+/* 만약 분할된 폰트들로 모든 글자가 커버된다면 이 코드는 필요 없을 수 있습니다. */
+@font-face {
+    font-family: 'TillVictoryComes';
+    src: url('https://cdn.jsdelivr.net/gh/tillvictorycomes/TillVictoryComes-font/tillvictorycomes-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    /* unicode-range를 지정하지 않으면 모든 글자에 대해 이 폰트가 적용될 수 있습니다.
+       이는 다른 분할된 폰트들보다 더 포괄적인 폰트일 때 유용합니다.
+       필요에 따라 명확한 unicode-range를 지정할 수도 있습니다. */
+}
+
+/* 이제 body나 다른 요소에서 이 폰트 이름을 사용합니다 */
 body {
-  font-family: 'TilVictoryComes', sans-serif; /* 웹 폰트가 로드되지 않을 경우 대비하여 폴백 폰트 지정 */
+    font-family: 'TillVictoryComes', sans-serif;
+    /* ... 기타 스타일 */
 }
