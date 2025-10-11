@@ -68,8 +68,3 @@
        필요에 따라 명확한 unicode-range를 지정할 수도 있습니다. */
 }
 
-/* 이제 body나 다른 요소에서 이 폰트 이름을 사용합니다 */
-body {
-    font-family: 'TillVictoryComes', sans-serif;
-    /* ... 기타 스타일 */
-}
