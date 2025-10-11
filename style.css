@@ -1,0 +1,45 @@
+/* TilVictoryComes-Regular.woff2 선언 */
+@font-face {
+  font-family: 'TilVictoryComes'; /* 폰트의 이름 */
+  src: url('fonts/TilVictoryComes-Regular.woff2') format('woff2'); /* WOFF2 파일 경로 */
+  font-weight: normal; /* 폰트 두께 (normal, bold, 100-900 등) */
+  font-style: normal; /* 폰트 스타일 (normal, italic 등) */
+  font-display: swap; /* 폰트 로딩 전략 (optional, block, swap, fallback) */
+}
+
+/* TilVictoryComes-Regular-hgye-a.woff 선언 (분할된 WOFF 폰트 예시) */
+@font-face {
+  font-family: 'TilVictoryComes'; /* 같은 폰트 이름을 사용하여 여러 파일 지정 가능 */
+  src: url('fonts/TilVictoryComes-Regular-hgye-a.woff') format('woff'); /* WOFF 파일 경로 */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  /* unicode-range: U+AC00-U+D7A3; /* 한글 (가-힣) 유니코드 범위. 특정 범위만 로드할 때 사용 */
+}
+
+/* TilVictoryComes-Regular-hgye-b.woff 선언 (분할된 WOFF 폰트 예시) */
+@font-face {
+  font-family: 'TilVictoryComes';
+  src: url('fonts/TilVictoryComes-Regular-hgye-b.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  /* unicode-range: U+3131-U+318E; /* 자음, 모음 등. 실제 범위는 폰트 특성에 따라 다름 */
+}
+
+/* ... 필요한 다른 분할된 WOFF 폰트들도 위와 같이 추가 */
+
+/* TilVictoryComes-Regular-latn.woff 선언 (라틴 문자 WOFF 폰트 예시) */
+@font-face {
+  font-family: 'TilVictoryComes';
+  src: url('fonts/TilVictoryComes-Regular-latn.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  /* unicode-range: U+0020-U+007E; /* ASCII 문자 범위 */
+}
+
+/* 폰트 사용 예시 */
+body {
+  font-family: 'TilVictoryComes', sans-serif; /* 웹 폰트가 로드되지 않을 경우 대비하여 폴백 폰트 지정 */
+}
