@@ -54,17 +54,4 @@
     unicode-range: U+0020-U+007E, U+00A0-U+00FF, U+2000-U+206F, U+20A0-U+20CF; /* 주요 라틴어 및 특수 문자 범위 */
 }
 
-/* 대체 WOFF (혹시 모를 상황 대비 또는 WOFF2 미지원 브라우저용) */
-/* 이 폰트 파일이 전체 폰트이거나, 위 분할된 폰트들로 커버되지 않는 다른 범위를 담당한다면 사용합니다. */
-/* 만약 분할된 폰트들로 모든 글자가 커버된다면 이 코드는 필요 없을 수 있습니다. */
-@font-face {
-    font-family: 'TillVictoryComes';
-    src: url('https://cdn.jsdelivr.net/gh/tillvictorycomes/TillVictoryComes-font/tillvictorycomes-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-    /* unicode-range를 지정하지 않으면 모든 글자에 대해 이 폰트가 적용될 수 있습니다.
-       이는 다른 분할된 폰트들보다 더 포괄적인 폰트일 때 유용합니다.
-       필요에 따라 명확한 unicode-range를 지정할 수도 있습니다. */
-}
 
